@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "genomic-toolkit"
+version = "0.1.0"
+description = "Modular bioinformatics toolkit for FASTA analysis and sequence translation"
+authors = [
+    { name = "Shiloh Cadere" }
+]
+requires-python = ">=3.8"
+
+[project.scripts]
+genomic-toolkit = "genomic_toolkit.cli:main"
