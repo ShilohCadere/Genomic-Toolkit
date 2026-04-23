@@ -53,8 +53,9 @@ genomic-toolkit --file data/sequence.fasta --gc --out results.txt
 ```
 
 ## Project Structure
+
+```text
 genomic-toolkit/
-│
 ├── src/
 │   └── genomic_toolkit/
 │       ├── cli.py
@@ -66,5 +67,40 @@ genomic-toolkit/
 │   └── sequence.fasta
 │
 ├── tests/
+│   └── (future test files)
+│
 ├── pyproject.toml
-└── README.md
+├── README.md
+└── .gitignore
+```
+## Example Output
+GC content: 43.27%
+
+Translation (frame 1):
+MKTLLV...
+
+## Tech Stack
+- Python 3.8+
+- argparse (CLI interface)
+- setuptools (packaging)
+- Standard library only (no external dependencies)
+
+## Purpose
+This project demonstrates:
+
+- Modular software design in Python
+- CLI tool development for bioinformatics workflows
+- FASTA file processing and sequence analysis
+- Reproducible pipeline-style computation
+- Packaging and installable Python tooling
+
+## Future Improvements
+- JSON output formatting for downstream pipelines
+- Multi-FASTA file support
+- FASTA format validation and error handling
+- Logging system for analysis tracking
+
+## Author
+
+### Shiloh Cadere
+### Bioinformatics Analyst | Clinical NGS Pipelines | Python / R / SQL
