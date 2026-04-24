@@ -1,6 +1,6 @@
 # Genomic Toolkit — CLI Bioinformatics Analysis Tool
 
-A modular Python command-line tool for basic genomic sequence analysis, built to simulate real-world bioinformatics preprocessing workflows including FASTA parsing, nucleotide composition analysis, and sequence translation.
+Sequence processing utilities for NGS workflows including FASTA parsing, format conversion, and preprocessing support for downstream QC analysis.
 
 ---
 
