@@ -1,56 +1,32 @@
-# Genomic Toolkit — CLI Bioinformatics Analysis Tool
+# Genomic Toolkit
 
-Sequence processing utilities for NGS workflows including FASTA parsing, format conversion, and preprocessing support for downstream QC analysis.
+## Recruiter Summary
 
----
+A Python-based bioinformatics toolkit for FASTA parsing, sequence analysis, protein translation, and command-line processing of nucleotide sequence data.
+
+This project demonstrates modular Python development, command-line tool design, biological sequence manipulation, and packaging of reusable bioinformatics utilities into an installable software package.
+
+## What This Project Demonstrates
+
+* Developing modular bioinformatics software in Python
+* Building command-line interfaces for biological data analysis
+* Parsing and processing FASTA-formatted sequence files
+* Calculating nucleotide composition metrics
+* Performing codon-based protein translation
+* Organizing reusable functionality into a package structure
+* Creating installable Python tooling for sequence analysis tasks
 
 ## Features
 
-- FASTA file parsing
-- Nucleotide composition analysis (A, T, G, C, N)
-- GC and AT content calculation
-- DNA complement and reverse complement
-- Codon-based protein translation (frames 1–3)
-- Command-line interface (CLI)
-- Installable Python package
-
----
-
-## Installation
-
-Clone the repository and install in editable mode:
-
-```bash
-git clone https://github.com/yourusername/genomic-toolkit.git
-cd genomic-toolkit
-pip install -e . 
-```
-## Usage
-
-### GC Content
-```bash
-genomic-toolkit --file data/sequence.fasta --gc
-```
-
-### AT Content
-```bash
-genomic-toolkit --file data/sequence.fasta --at
-```
-
-### Nucleotide Composition
-```bash
-genomic-toolkit --file data/sequence.fasta --composition
-```
-
-### Protein Translation (Frame 1-3)
-```bash
-genomic-toolkit --file data/sequence.fasta --translate 1
-```
-
-### Save Output to File
-```bash
-genomic-toolkit --file data/sequence.fasta --gc --out results.txt
-```
+* FASTA file parsing
+* Nucleotide composition analysis (A, T, G, C, N)
+* GC content calculation
+* AT content calculation
+* DNA complement generation
+* Reverse complement generation
+* Codon-based protein translation (Frames 1–3)
+* Command-line interface (CLI)
+* Installable Python package structure
 
 ## Project Structure
 
@@ -67,40 +43,92 @@ genomic-toolkit/
 │   └── sequence.fasta
 │
 ├── tests/
-│   └── (future test files)
 │
-├── pyproject.toml
+├── requirements.txt
 ├── README.md
 └── .gitignore
 ```
+
+## Installation
+
+Clone the repository and install in editable mode:
+
+```bash
+git clone https://github.com/yourusername/genomic-toolkit.git
+cd genomic-toolkit
+pip install -e .
+```
+
+## Usage
+
+### GC Content
+
+```bash
+genomic-toolkit --file data/sequence.fasta --gc
+```
+
+### AT Content
+
+```bash
+genomic-toolkit --file data/sequence.fasta --at
+```
+
+### Nucleotide Composition
+
+```bash
+genomic-toolkit --file data/sequence.fasta --composition
+```
+
+### Protein Translation
+
+```bash
+genomic-toolkit --file data/sequence.fasta --translate 1
+```
+
+### Save Output to File
+
+```bash
+genomic-toolkit --file data/sequence.fasta --gc --out results.txt
+```
+
 ## Example Output
-GC content: 43.27%
 
-Translation (frame 1):
+```text
+GC Content: 43.27%
+
+A: 112
+T: 97
+G: 84
+C: 82
+N: 0
+
+Translation (Frame 1):
 MKTLLV...
+```
 
-## Tech Stack
-- Python 3.8+
-- argparse (CLI interface)
-- setuptools (packaging)
-- Standard library only (no external dependencies)
+## Technology Stack
 
-## Purpose
-This project demonstrates:
+**Python** • **argparse** • **FASTA Processing** • **Command-Line Interfaces** • **Bioinformatics Utilities**
 
-- Modular software design in Python
-- CLI tool development for bioinformatics workflows
-- FASTA file processing and sequence analysis
-- Reproducible pipeline-style computation
-- Packaging and installable Python tooling
+## Design Goals
 
-## Future Improvements
-- JSON output formatting for downstream pipelines
-- Multi-FASTA file support
-- FASTA format validation and error handling
-- Logging system for analysis tracking
+This project focuses on:
+
+* Reusable sequence analysis utilities
+* Modular software organization
+* Command-line bioinformatics workflows
+* Readable and maintainable Python code
+* Lightweight tooling with minimal dependencies
+
+## Future Enhancements
+
+* Multi-FASTA support
+* FASTA validation and error handling
+* Expanded sequence QC metrics
+* Unit test coverage
+* Enhanced logging and execution reporting
 
 ## Author
 
-### Shiloh Cadere
-### Bioinformatics Analyst | Clinical NGS Pipelines | Python / R / SQL
+**Shiloh Cadere**
+Bioinformatics Analyst specializing in genomics QC, data validation, workflow development, and laboratory data systems.
