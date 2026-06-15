@@ -93,17 +93,26 @@ genomic-toolkit --file data/sequence.fasta --gc --out results.txt
 
 ## Example Output
 
+Running:
+
+```bash
+python src/genomic_toolkit/cli.py \
+  --file data/sequence.fasta \
+  --composition \
+  --gc \
+  --at \
+  --translate 1 \
+  --out results.txt
+```
+
+Example `results.txt`:
+
 ```text
-GC Content: 43.27%
-
-A: 112
-T: 97
-G: 84
-C: 82
-N: 0
-
-Translation (Frame 1):
-MKTLLV...
+Nucleotide Composition: {'A': 18, 'T': 20, 'G': 21, 'C': 11, 'N': 0}
+GC content: 43.84%
+AT content: 52.05%
+Translation (frame 1):
+EQE_RAKRMAPKGLIFLAVLCFSX
 ```
 
 ## Technology Stack
