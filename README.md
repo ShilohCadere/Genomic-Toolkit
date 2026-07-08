@@ -140,4 +140,5 @@ This project focuses on:
 ## Author
 
 **Shiloh Cadere**
-Bioinformatics Analyst specializing in genomics QC, data validation, workflow development, and laboratory data systems.
+
+Bioinformatics analyst focused on genomics QC, analytical review, workflow development, and reproducible bioinformatics software.
