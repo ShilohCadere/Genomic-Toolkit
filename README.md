@@ -43,8 +43,7 @@ genomic-toolkit/
 │   └── sequence.fasta
 │
 ├── tests/
-│
-├── requirements.txt
+├── pyproject.toml
 ├── README.md
 └── .gitignore
 ```
@@ -54,8 +53,8 @@ genomic-toolkit/
 Clone the repository and install in editable mode:
 
 ```bash
-git clone https://github.com/yourusername/genomic-toolkit.git
-cd genomic-toolkit
+git clone https://github.com/ShilohCadere/Genomic-Toolkit.git
+cd Genomic-Toolkit
 pip install -e .
 ```
 
