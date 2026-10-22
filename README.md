@@ -108,10 +108,10 @@ Example `results.txt`:
 
 ```text
 Nucleotide Composition: {'A': 18, 'T': 20, 'G': 21, 'C': 11, 'N': 0}
-GC content: 43.84%
-AT content: 52.05%
+GC content: 45.71%
+AT content: 54.29%
 Translation (frame 1):
-EQE_RAKRMAPKGLIFLAVLCFSX
+EQE_RAKRMAPKGLIFLAVLCFS
 ```
 
 ## Technology Stack
@@ -141,9 +141,9 @@ This project focuses on:
 - [Sequence QC Filtering](https://github.com/ShilohCadere/ngs-qc-pipeline) is a separate foundational FASTA metric/filtering exercise; it does not import this toolkit.
 - [Clinical NGS Review](https://github.com/ShilohCadere/clinical-ngs-review) demonstrates more advanced configurable QC decision support using simulated sequencing metrics.
 
-## Example-data limitation
+## Example data and verification
 
-The checked-in `data/sequence.fasta` currently ends with a literal `...` placeholder. Replace that placeholder with valid sequence data before using it as a biological FASTA input. The output shown above is illustrative and has not been verified against the current bundled file; do not treat it as a validated execution result.
+The bundled `data/sequence.fasta` is a valid 70-base nucleotide example (18 A, 20 T, 21 G, 11 C). The displayed GC, AT, composition, and frame-1 translation values were recalculated against this sequence. They are reproducible example expectations; this documentation update does not constitute a full automated test run.
 
 ## Author
 
