@@ -136,6 +136,15 @@ This project focuses on:
 * Unit test coverage
 * Enhanced logging and execution reporting
 
+## Related Portfolio Work
+
+- [Sequence QC Filtering](https://github.com/ShilohCadere/ngs-qc-pipeline) is a separate foundational FASTA metric/filtering exercise; it does not import this toolkit.
+- [Clinical NGS Review](https://github.com/ShilohCadere/clinical-ngs-review) demonstrates more advanced configurable QC decision support using simulated sequencing metrics.
+
+## Example-data limitation
+
+The checked-in `data/sequence.fasta` currently ends with a literal `...` placeholder. Replace that placeholder with valid sequence data before using it as a biological FASTA input. The output shown above is illustrative and has not been verified against the current bundled file; do not treat it as a validated execution result.
+
 ## Author
 
 **Shiloh Cadere**
